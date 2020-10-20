@@ -2,7 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://dylandewey.com/",
+  "homepage": "https://dylandewey.github.io/ReactPortfolio/",
   "dependencies": {
     "@carbon/icons-react": "^10.19.0",
     "@carbon/themes": "^10.21.0",
@@ -13,6 +13,7 @@
     "bootstrap": "^4.5.3",
     "carbon-components": "^10.22.0",
     "carbon-components-react": "^7.22.0",
+    "gh-pages": "^3.1.0",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "react": "^16.14.0",
