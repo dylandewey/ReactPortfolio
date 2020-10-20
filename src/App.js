@@ -1,27 +1,22 @@
-import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Discover from "./pages/Discover";
-import About from "./pages/About";
-import Search from "./pages/Search";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Wrapper from "./components/Wrapper";
+import React, { useState, useEffect } from 'react';
+import Pages from './pages';
 
 function App() {
-  return (
-    <Router>
-      <div>
-        <Navbar />
-        <Wrapper>
-          <Route exact path="/" component={About} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/discover" component={Discover} />
-          <Route exact path="/search" component={Search} />
-        </Wrapper>
-        <Footer />
-      </div>
-    </Router>
-  );
+  const [user, setUser] = useState(null);
+  useEffect(() => {
+    // NOTE: Use your username below
+    fetch('https://gitconnected.com/v1/portfolio/dylandewey')
+      .then(res => res.json())
+      .then(user => {
+        setUser(user);
+      });
+  }, []);
+
+  if (!user) {
+    return <div />;
+  }
+
+  return <Pages user={user} />;
 }
 
 export default App;
