@@ -2,7 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dylandewey.github.io/",
+  "homepage": "https://dylandewey.github.io/ReactPortfolio/",
   "dependencies": {
     "@carbon/icons-react": "^10.19.0",
     "@carbon/themes": "^10.21.0",
