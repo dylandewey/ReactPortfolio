@@ -8,5 +8,6 @@ I worked with my tutor to try to resolve the issues with no avail.  It actually 
 Note: When you run it on the localhost be sure the erase the path after the slash.  Then it will pull up.  It is very slow and takes a while for it to finally load.  
 
 #### Demo
-<img alt="Demo" src="ReactPortfolio.gif" width="500">
+<img alt="Demo" src="/UofUBootcamp/Homework/ReactPortfolio/
+" width="500">
 
